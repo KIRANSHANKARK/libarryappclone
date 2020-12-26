@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> edit</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+   <a href="/" id="homeicon"><svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-house-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+        <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+      </svg></a>
+    
+    <div class="login-wrap">
+        <div class="login-html">
+            <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">author</label>
+            <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab"></label>
+            
+            <div class="login-form">
+                <div class="sign-in-htm">
+                    <form action="/authors/<%=author._id%>/edit/editauthor"  method="">
+               
+                    <div class="group">
+                            <label for="user" class="label">name</label>
+                            <input id="user2" type="text" name="author2" value="<%=author.author2%>" class="input">
+                            <br>
+                            <label for="display" id="d4"></label>
+                        
+                    </div>
+                    <div class="group">
+                        <label for="pass" class="label">genre of art</label>
+                        <input id="pass3" type="text" name="genre2" value="<%=author.genre2%>"  class="input" >
+                        <br>
+                        <label for="display" id="d5"></label>
+               
+                    </div>
+                    <div class="group">
+                        <label for="pass" class="label">popular works</label>
+                        <input id="pass4" type="text" name="works" value="<%=author.works%>"  class="input">
+                        <br>
+                        <label for="display" id="d6"></label>
+                    
+                    </div>
+                    <div class="group">
+                    <label for="pass" class="label">add image</label>
+                    <input id="check" type="file" name="image2" value="<%=author.image2%>"  accept="image/*">
+                    </div> 
+                    
+                    
+                    <div class="group">
+                        <input type="submit" class="button" value="edit">
+                    </div>
+                    <div class="hr"></div>
+                </form>
+                </div>
+            
+                <div class="sign-up-htm">
+                    <div class="group">
+                        <!-- <form action=""   method=""> -->
+                            
+                    </div>
+                  
+                    <div class="group">
+                        
+                    </div>
+                    <div class="group">
+                        
+                    </div>
+                      <div class="group">
+                 
+                    </div>
+                  
+                    
+                    <div class="group">
+                        <!-- <input type="submit" class="button" value="edit"> -->
+                    </div>
+                    <div class="hr"></div>
+                </form>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="/js/addbook.js"></script> -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+</body>
+</html>
